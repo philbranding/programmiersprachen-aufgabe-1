@@ -1,0 +1,21 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[      
+				"make",
+				"-j4"
+			],
+			"file_regex": "^(..[^:]*):(.*)$",
+			"name": "programmiersprachen_hello_world",
+			"working_dir": "${project_path}/build"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
