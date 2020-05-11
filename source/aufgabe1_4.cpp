@@ -5,6 +5,8 @@ Erklären Sie in diesem Zusammenhang das Schlüs- selwort const.
 Was ist eine Typkonvertierung und wieso kann es dabei Probleme
 geben? Wo sehen Sie Probleme im nachfolgenden Programmcode?
 
+*/
+
 int main() {
 	int 		a 	= 9;
 	bool 		b 	= false;
@@ -18,6 +20,10 @@ int main() {
 	return 0;
 }
 
-*/
 
+
+
+// Typen: 		int, bool, char, double 
+// Variablen: 	a,b,c,d,c,five, e
+// Werte:		9, false, 'a', 1.3, 5, a/five , d, 0;
 
