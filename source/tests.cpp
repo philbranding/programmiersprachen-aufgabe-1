@@ -130,7 +130,7 @@ double binomial(double x, double y)
     return number;
    }
 
-//Aufgabe 1.15 The Prime Number Function------------------------------
+//Aufgabe 1.14 The Prime Number Function------------------------------
 
 
 bool is_prime(int number)
