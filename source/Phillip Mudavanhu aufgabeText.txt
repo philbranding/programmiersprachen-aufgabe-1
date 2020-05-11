@@ -1,15 +1,35 @@
-Phillip Mudavanhu
-Aufgabe 01
-Programmierung 
+*****************************************************************
+ * UBUNGS 01: Aufgabe 
+ *
+ * Name     : Phillip Mudavanhu
+ *
+ * Mtrkln   : 112601
+ *  
+ * Topic    : Signature of a Funktion and Scope of a Variable C++
+ *
+ *****************************************************************/
+
+
+ Github links:
+
+ https://github.com/philbranding/programmiersprachen-helloworld
+
+
+
+ https://github.com/philbranding/programmiersprachen-aufgabe-1
 
 
 Aufgabe 1.2------------------------------------
 
-Quelle text: github : www.github.com/philbranding
+Quelle text: github : 
+
+https://github.com/philbranding/programmiersprachen-aufgabe-1/blob/master/source/Phillip%20Mudavanhu%20aufgabeText.txt
 
 
 
 Aufgabe  1.3-----------------------------------
+
+Code file : aufgabe1_3.cpp
 
 Losung: die kleinst Zahlen die mit 1 und 20 teilbar ist 232792560
         = 2 * 2 * 2 * 2 * 3 * 3 * 5 * 7 * 11 * 13 * 17 * 19 = 232792560
@@ -25,8 +45,8 @@ int main ()
 		char c = ’a’;         ......Type[Charecter]   Variable[c]    Wert[a]
 		double d = 1.3;       ......Type[Double]      Variable[d]    Wert[1.3]
 		
-		int const two = 2;    ......Type[Interger]    Constant [two] Wert[2] No changes of the value 2 once the compliled
-		double e = a/two;     ......Type[Double]      Variable [e]   Wert[9/2]  (Int/Int gives an Int (Data loss))
+		int const five = 5;    ......Type[Interger]    Constant [two] Wert[2] No changes of the value 2 once the compliled
+		double e = a/five;     ......Type[Double]      Variable [e]   Wert[9/2]  (Int/Int gives an Int (Data loss))
 		two = d;              ......Type[Interger]    Variable [d]   Wert[fehle meldung wegen zuwesung auf eine const Value]
 	return 0;
 }
