@@ -70,8 +70,9 @@ static double add(double a, double b){ // Function Definition
 //Class
 
 //Declaration
-class klass;
-struct ztruct;
+class MyClass;
+struct MyStruct;
+
 
 
 //Definition 
@@ -80,7 +81,7 @@ public:
 	void getprint(string mgs){
 		string message = mgs;
 	}
-	
+
 private:
 	void print( string message){
 
