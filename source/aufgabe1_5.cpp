@@ -1,3 +1,16 @@
+/*****************************************************************
+ * UBUNGS 01: Aufgabe 1.5
+ *
+ * Name     : Phillip Mudavanhu
+ *
+ * Mtrkln   : 112601
+ *  
+ * Topic    : Declaration, Definition, Intialization in C++
+ *
+ *****************************************************************/
+
+
+
 /* 
 
 DECLARATION
@@ -23,7 +36,7 @@ Initialization is not always necessary but it’s important.
 
 //Variables
 
-int var; 	 // declaration of a variable called var
+extern int var; 	 // declaration of a variable called var
 var=10; 	 // initialize of the variable with a value of 10
 int var=10;  // definetion of a memory space, calling it var and assigning a value of 10*/
 

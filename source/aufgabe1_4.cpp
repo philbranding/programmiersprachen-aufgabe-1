@@ -1,3 +1,16 @@
+/*****************************************************************
+ * UBUNGS 01: Aufgabe 1.4
+ *
+ * Name     : Phillip Mudavanhu
+ *
+ * Mtrkln   : 112601
+ *  
+ * Topic    : Types, Variables, Values in C++
+ *
+ *****************************************************************/
+
+
+
 /* Aufgabe 1.4
 
 Informieren Sie sich über Typen in C++. 

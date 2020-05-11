@@ -1,3 +1,14 @@
+/*****************************************************************
+ * UBUNGS 01: Aufgabe 1.3
+ *
+ * Name     : Phillip Mudavanhu
+ *
+ * Mtrkln   : 112601
+ *  
+ * Topic    : A ggT programm for 1-20 C++
+ *
+ *****************************************************************/
+
 
 /*
 
@@ -31,7 +42,7 @@ long long ggT(long long n)
 // Main function for testing 
 int main()  
 { 
-    long long theInput = 20; 
-    cout <<"The smallest number that is divisible by 1 and " <<theInput<< " is : " << ggT(theInput) << "\n"; 
+    long long theInput = 20;  
+    cout <<"The smallest number that is divisible by 1 and " << theInput << " is : " << ggT(theInput) << "\n"; 
     return 0; 
 } 
