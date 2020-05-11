@@ -2,22 +2,51 @@
 #include <catch.hpp>
 
 
+#include <iostream> 
+#include <stdexcept> // To use runtime_error 
+using namespace std; 
+  
+
 float Pi = 3.14159265; 
 int Two = 2;
 
+
+
+
+//Aufgabe Division by 0 Test Funktion Implementation -----------------
+
+int Division(int num, int den) 
+{ 
+    if (den == 0 || num == 0){
+  		return false;
+	} 
+
+	else {
+  		return true;
+	}
+  
+}
 //Aufgabe 1.8 GCD Funktion Implementation ---------------------------
 
 
 int gcd(int a, int b) 
 {
+	if(Division(a,b)==true){
+
 	int gcd = 0;
-	for(int i=1; i<=a&&i<=b; i++){
+	for(int i=1; i<=a && i<=b; i++){
 		if(a%i == 0 && b%i == 0 )
 		{
 	        gcd=i;
    		}
 	}
 	return gcd;
+	} 
+    else {
+    	std::cout <<"\n ********** TEST ERROR DETECTED: You tried dividing by 0 ************ \n" << std::endl;
+    	throw runtime_error("Math error: Attempted to divide by zero\n"); 
+
+    }
 }
 
 //Aufgabe 1.9 CheckSum  Funktion Implementation---------------------- 
@@ -111,6 +140,13 @@ TEST_CASE("describe_gcd ","[gcd]")
 	REQUIRE( gcd(2,4) == 2 );
 	REQUIRE( gcd(6,9) == 3 );
 	REQUIRE( gcd(3,7) == 1 );
+    
+    REQUIRE( gcd(1,12345) == 1 );
+    REQUIRE( gcd(-1,-12345) == 0 );
+    REQUIRE( gcd(1,-12345) == 0 );
+
+    //Testing 0 will result in a failed test and will be highlighted
+	//REQUIRE( gcd(0,0) == 0 );
 } 
 
 TEST_CASE("checksum","[checksum]")
@@ -118,6 +154,7 @@ TEST_CASE("checksum","[checksum]")
 	REQUIRE( checksum(112601) == 11 );
 	REQUIRE( checksum(123456) == 21 );
 	REQUIRE( checksum(101010) == 3 );
+	REQUIRE( checksum(000000) == 0);
 }
 
 TEST_CASE("sumMultiples","[sumMultiples]")
