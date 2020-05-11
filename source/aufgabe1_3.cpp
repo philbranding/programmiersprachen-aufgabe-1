@@ -8,7 +8,7 @@ die durch die Zahlen 1 bis 20 teilbar ist errechnet
 und auf der Konsole ausgibt. [2 Punkte]
 
 */
-
+#include <iostream>
 using namespace std; 
   
 // Function returns the gcd 
@@ -22,16 +22,16 @@ int gcd(long a, long b) {
 
 long long ggT(long long n) 
 { 
-    long long ans = 1;     
+    long long divisor = 1;     
     for (long long i = 1; i <= n; i++) 
-        ans = (ans * i)/(gcd(ans, i)); 
-    return ans; 
+        divisor = (divisor * i)/(gcd(divisor, i)); 
+    return divisor; 
 } 
   
 // Main function for testing 
 int main()  
 { 
-    long long n = 20; 
-    cout << ggT(n); 
+    long long theInput = 20; 
+    cout <<"The smallest number that is divisible by 1 and " <<theInput<< " is : " << ggT(theInput) << "\n"; 
     return 0; 
 } 
