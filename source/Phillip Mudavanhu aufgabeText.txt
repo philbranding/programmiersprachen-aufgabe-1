@@ -45,9 +45,9 @@ int main ()
 		char c = ’a’;         ......Type[Charecter]   Variable[c]    Wert[a]
 		double d = 1.3;       ......Type[Double]      Variable[d]    Wert[1.3]
 		
-		int const five = 5;    ......Type[Interger]    Constant [two] Wert[2] No changes of the value 2 once the compliled
-		double e = a/five;     ......Type[Double]      Variable [e]   Wert[9/2]  (Int/Int gives an Int (Data loss))
-		two = d;              ......Type[Interger]    Variable [d]   Wert[fehle meldung wegen zuwesung auf eine const Value]
+		int const five = 5;    ......Type[Interger]    Constant [five] Wert[5] No changes of the value 5 once the compliled
+		double e = a/five;     ......Type[Double]      Variable [e]   Wert[9/5]  (Int/Int gives an Int (Data loss))
+		two = d;              ......Type[Interger]    Variable [d]   Wert[fehle meldung wegen zuweisung auf eine const Value]
 	return 0;
 }
 
@@ -55,7 +55,7 @@ int main ()
 Aufgabe  1.5-----------------------------------
 
 
-Initialisierung : This is the process by which a complier reserves or creates memory to contain a specified Variable Type
+Initialisierung  : This is the process by which a complier reserves or creates memory to contain a specified Variable Type
 
 Zuweisung        : This is a process of storing a value in an already defined (typed) storage. 
 
@@ -127,7 +127,7 @@ Aufgabe  1.7-----------------------------------
 
 # include <iostream>				
 
-int var = 3;					     .....Type of Scope [Global Variable] this variable stays throught the program    
+int var = 3;					     .....Type of Scope [Global Variable] this variable stays through the program    
 
 double sum (double a , double b)      
 {
@@ -190,7 +190,7 @@ std::cin     		:	Standard Input is a function from the standard library that tak
 
 << 					:	Output redirection operator gives the information that is to be writtten to the console.
 
->> 					:	Input reditection operator gives the information passed from the keyboard int the programm.
+>> 					:	Input redirection operator gives the information passed from the keyboard int the programm.
 
 Funktion 			:	A function is an independent part of a program that carries out a specified task when it is envoked during a 
 						program exection process.
@@ -212,10 +212,12 @@ Name 				:   A user difined tag given to an input or variable, function or class
 
 Wert 				:   The value which is saved in the memory 
 
-Initialisierung 	:
+Initialisierung 	:	This refers to how the compiler assigns a datatype and a value of some memory
 
-Zuweisung 			:
+Zuweisung 			:	Refers to the allocation of a declared or difined momery to a new value or data. e.g a = a+1; or a = b;
 
-const 				:
+const 				:	Reference to a reserved memory or values that can not be altered during runtime but can only be used or 
+						referenced without changing the. They remain as a constant through out the lifetime of the program's runtime
 
-Gültigkeitsbereich 	: 
+Gültigkeitsbereich 	:  Scope referes to the lifespan of a block of memory during the execusion and how variable or functions 
+					   are stored and reference during that time.
