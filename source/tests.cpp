@@ -172,12 +172,15 @@ TEST_CASE ("describe_gcd", "[gcd]")
 TEST_CASE ("describe_checksum", "[checksum]")
 {
 	REQUIRE (checksum(112601) == 11);
-	REQUIRE (checksum(000000) == 0);
 	REQUIRE (checksum(111111) == 6);
 	REQUIRE (checksum(12345) == 15);
 	REQUIRE (checksum(1) == 1);
 	REQUIRE (checksum(02) == 2);
 	REQUIRE (checksum(-1) == -1);
+
+	//Test with zero
+	REQUIRE (checksum(000000) == 0);
+
 }
 
 
@@ -214,6 +217,15 @@ TEST_CASE("tests_cylinder","[cylinder]")
 {
 	REQUIRE( cyclinderVolume (10,5) == 1570.79639f);
 	REQUIRE( cylinderArea (10,5) == 942.47778f);
+
+	REQUIRE( cyclinderVolume(0,0) == 0);
+	REQUIRE( cylinderArea (0,0) == 0);
+
+	REQUIRE( cyclinderVolume(1,1) == Approx(3.14159f));
+	REQUIRE( cylinderArea (1,1) == Approx(12.56637f));
+
+
+
 }
 
 

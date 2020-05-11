@@ -1,0 +1,201 @@
+Phillip Mudavanhu
+Aufgabe 01
+Programmierung 
+
+
+Aufgabe 1.2------------------------------------
+
+Quelle text: github : www.github.com/philbranding
+
+
+
+Aufgabe  1.3-----------------------------------
+
+Losung: die kleinst Zahlen die mit 1 und 20 teilbar ist 232792560
+        = 2 * 2 * 2 * 2 * 3 * 3 * 5 * 7 * 11 * 13 * 17 * 19 = 232792560
+
+
+
+Aufgabe  1.4-----------------------------------
+
+int main ()
+{
+		int a = 9;            ......Type[Interger]    Variable[a]    Wert[9]
+		bool b = false;       ......Type[Boolean]     Variable[b]    Wert[false]
+		char c = ’a’;         ......Type[Charecter]   Variable[c]    Wert[a]
+		double d = 1.3;       ......Type[Double]      Variable[d]    Wert[1.3]
+		
+		int const two = 2;    ......Type[Interger]    Constant [two] Wert[2] No changes of the value 2 once the compliled
+		double e = a/two;     ......Type[Double]      Variable [e]   Wert[9/2]  (Int/Int gives an Int (Data loss))
+		two = d;              ......Type[Interger]    Variable [d]   Wert[fehle meldung wegen zuwesung auf eine const Value]
+	return 0;
+}
+
+
+Aufgabe  1.5-----------------------------------
+
+
+Initialisierung : This is the process by which a complier reserves or creates memory to contain a specified Variable Type
+
+Zuweisung        : This is a process of storing a value in an already defined (typed) storage. 
+
+Beispiele Initialisierung : int x; int y;
+
+Beispiele Zuweisung : x = y*y
+
+Unterschied : the difference is that intialisation clearly difines the type of a variable and can only be done before using the varible or without using the variables created. Zuweisung can only happen after initialisation and doesn't exist without intialization first. If one tries to use an uninitialized variable the compile will give 
+
+Aufgabe  1.6-----------------------------------
+
+
+ Deklaration (manchmal auch Forward-Deklaration
+genannt) und Definition und geben Sie jeweils ein Beispiel an. Welche Unterschiede
+gibt es? Geben Sie Beispiele für Funktionen, Variablen und Klassen.
+Hinweis: extern Variable 
+
+
+Deklaration-----------------------------------
+
+
+
+Funktion  :  extern int Sum(int a, int b);
+Variablen :  extern int Result;
+UserType  :  class MyClass;
+ 
+
+
+Definition -----------------------------------
+
+Funktion  :  int Sum(int a, int b){ return a + b;}
+Variablen :  int Result = a + b ;
+UserType  :  class MyClass{ MyClass{};}
+
+
+A definition introduces a variable's or a function's name and type.
+• A variable definition reserves a number of bytes of memory for the variable.
+• A function definition generates code for the function.
+• In both cases, definitions cause the compiler to allocate memory to store the variable or function code.
+• An object must be defined exactly once in a program.*
+
+
+• The declaration of a variable (or function) announces that the variable (or function) exists and is defined somewhere else (in the same file, or in a different file). The connection is made when the object files are linked.
+• A variable declaration consists of the variable's name and its type preceded by the keyword extern.
+• A function declaration consists of the function prototype (without the function body) preceded by the keyword extern.
+• A (forward) class declaration consists of the class name (without the class body) preceded by the keyword class.
+• A declaration does not generate code, and does not reserve memory.
+• There can be any number of declarations for the same object name in a program (as long as they’re consistent with each other).
+• If a declaration is used in a file different from that with the definition of the object, the linker will insert the real memory address of the object instead of the symbolic name.
+• In C++, a variable must be defined or declared to the program before it is used. 
+
+
+definition defines the memory area ( allocates the memory ) for the variable and the declaration tells about the signature of the variable ( type and size to be considered). definition occures once through the program( memory is allocated once ), but the declaration can occur many times.
+
+
+For functions when you declare a function you specify its name and type as well as what parameters it accepts at the beginning. When you define a function the function is actually typed out as to what it does.
+
+All declarations are qualified with the extern keyword and have no initializer.   e.g extern int x;
+All definitions include an initializer.                                           e.g int x = 2000;
+
+Assignment  x = x + 3000;
+
+
+
+
+
+Aufgabe  1.7-----------------------------------
+
+
+# include <iostream>				
+
+int var = 3;					     .....Type of Scope [Global Variable] this variable stays throught the program    
+
+double sum (double a , double b)      
+{
+	return a + b ;					  .....Type of Scope [Local Variables]
+}									  once the function ends the local varible in this scope dies
+
+int square (int var)
+{
+	return var * var ;				 .....Type of Scope [Local Variables]
+}									 this is using a local variable and once the program terminates this var dies
+
+int main ()
+	{
+		for ( int i = 0; i != 100; ++ i ) {                   .....Type of Scope [Global to this Function Variables]
+		std :: cout << " i ^ 2 = " << square ( i ) << "\n";   .....Type of Scope [Local Variables]
+		std :: cout << " i + i = " << sum (i , i ) << "\n";   .....Type of Scope [Local Variables]
+	}
+	return 0;
+}
+
+
+
+Aufgabe  1.17-----------------------------------
+
+
+C++					:	C++ is a statically typed, compiled, general-purpose, case-sensitive, free-form
+						programming language that supports procedural, object-oriented, and generic programming.
+
+Quellcode			:	This is a form of human-readable code that cannot be excuted unless compiled into machine code.
+
+complier 			: 	A complier is a program that converts the Source code into Object code. 
+
+Linker				:	A linker is a program that links the object code with the specified libraries or other object code
+						to create an excutable program.
+
+Objektcode			:	This the code that is produced after compiling the source code using a compiler and before using a linker.
+
+Ausführbare Datei	:	Exacutable code is the program that is built up using the object code and linked libries. This code can be runned.
+
+main()				:	This is the first function that is invoked by the operating system before any other functions are envoked 
+						in programm. 
+
+#include			:	This is a preprocessor instruction that runs and includes the specified files in the programm.  
+
+Kommentar			:   This is human readable text used to communicate or give notes to the programmer and it is not complied by the 
+						complier.
+
+Header				:	The header is the part of the program that contains all the preprossor files and any other files to be included 
+						in the programm. 
+
+Programm  			:	This is a set of instructions that are executable by the computer to a complish a specified task. 
+
+
+Ausgabe				:	Output refeers to the products of a programm that are given out for example text on screen, file. 
+
+
+std::cout			:	Standard Output is a function that writes out information to the console as an output.
+
+std::cin     		:	Standard Input is a function from the standard library that takes input from the keyboard ad input to a program.
+
+<< 					:	Output redirection operator gives the information that is to be writtten to the console.
+
+>> 					:	Input reditection operator gives the information passed from the keyboard int the programm.
+
+Funktion 			:	A function is an independent part of a program that carries out a specified task when it is envoked during a 
+						program exection process.
+
+Funktionssignatur 	:	A_Return_Type nameOfFunction (Type_Paramenters){} A Function signture specifies the return type of a function, 
+						its name and the respective parameters that the function takes.
+
+Deklaration 		:	Indicates the Type and does not reserve memory
+
+Definition 			:   Reserves Memory 
+
+Typ 				:   Form of Data storage categories or type that can be saved in the memory 
+
+Typkonvertierung 	:   Transfroming one type into another for example an int to a float
+
+Variable 			:   A form of value that can be storage in the memory 
+
+Name 				:   A user difined tag given to an input or variable, function or class in a programm
+
+Wert 				:   The value which is saved in the memory 
+
+Initialisierung 	:
+
+Zuweisung 			:
+
+const 				:
+
+Gültigkeitsbereich 	: 
