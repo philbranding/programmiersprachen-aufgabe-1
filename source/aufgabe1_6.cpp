@@ -65,17 +65,32 @@ static double add(double a, double b){ // Function Definition
 
 
 
-
-
-//Class
+//DatenType
 
 //Declaration
+/*
+
+	UserType MyType;
+*/
+//Example
+
 class MyClass;
 struct MyStruct;
 
 
 
 //Definition 
+
+/*
+
+	UserType myType{
+		
+	};
+
+*/
+
+//Example
+
 class MyClass {
 public:
 	void getprint(string mgs){

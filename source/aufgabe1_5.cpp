@@ -25,6 +25,10 @@ UserType A = 10;
 UserType B = 20; 
 
 
+A = B/C // Allocation 
+
+
+
 /* 
 
 INTIALIZATION
@@ -68,7 +72,7 @@ extern int add(int,int); //declaration of the function called add that takes two
 int add(int a, int b); //
 
 static int multiply(int a=10, int b=20){ //Function Intialization 
-	int result = a * b;
+	int result = a * b; //Zuweisung
 	return result;
 }
 
