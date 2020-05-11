@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named aufgabe1_3
-
-# Build rule for target.
-aufgabe1_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe1_3
-.PHONY : aufgabe1_3
-
-# fast build rule for target.
-aufgabe1_3/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe1_3.dir/build.make source/CMakeFiles/aufgabe1_3.dir/build
-.PHONY : aufgabe1_3/fast
-
-#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -135,6 +122,32 @@ tests: cmake_check_build_system
 tests/fast:
 	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named mile_to_kilometer
+
+# Build rule for target.
+mile_to_kilometer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mile_to_kilometer
+.PHONY : mile_to_kilometer
+
+# fast build rule for target.
+mile_to_kilometer/fast:
+	$(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/build
+.PHONY : mile_to_kilometer/fast
+
+#=============================================================================
+# Target rules for targets named aufgabe1_3
+
+# Build rule for target.
+aufgabe1_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufgabe1_3
+.PHONY : aufgabe1_3
+
+# fast build rule for target.
+aufgabe1_3/fast:
+	$(MAKE) -f source/CMakeFiles/aufgabe1_3.dir/build.make source/CMakeFiles/aufgabe1_3.dir/build
+.PHONY : aufgabe1_3/fast
 
 #=============================================================================
 # Target rules for targets named helloworld
@@ -157,8 +170,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... aufgabe1_3"
 	@echo "... tests"
+	@echo "... mile_to_kilometer"
+	@echo "... aufgabe1_3"
 	@echo "... helloworld"
 .PHONY : help
 

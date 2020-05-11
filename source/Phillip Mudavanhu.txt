@@ -1,0 +1,19 @@
+*****************************************************************
+ * UBUNGS 01: Aufgabe 
+ *
+ * Name     : Phillip Mudavanhu
+ *
+ * Mtrkln   : 112601
+ *  
+ * Topic    : Signature of a Funktion and Scope of a Variable C++
+ *
+ *****************************************************************/
+
+
+ Github links:
+
+ https://github.com/philbranding/programmiersprachen-helloworld
+
+
+
+ https://github.com/philbranding/programmiersprachen-aufgabe-1

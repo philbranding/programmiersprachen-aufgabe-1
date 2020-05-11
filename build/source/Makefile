@@ -111,21 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe1_3.dir/rule:
-	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe1_3.dir/rule
-.PHONY : source/CMakeFiles/aufgabe1_3.dir/rule
-
-# Convenience name for target.
-aufgabe1_3: source/CMakeFiles/aufgabe1_3.dir/rule
-
-.PHONY : aufgabe1_3
-
-# fast build rule for target.
-aufgabe1_3/fast:
-	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/aufgabe1_3.dir/build.make source/CMakeFiles/aufgabe1_3.dir/build
-.PHONY : aufgabe1_3/fast
-
-# Convenience name for target.
 source/CMakeFiles/tests.dir/rule:
 	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
 .PHONY : source/CMakeFiles/tests.dir/rule
@@ -139,6 +124,36 @@ tests: source/CMakeFiles/tests.dir/rule
 tests/fast:
 	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
+
+# Convenience name for target.
+source/CMakeFiles/mile_to_kilometer.dir/rule:
+	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/mile_to_kilometer.dir/rule
+.PHONY : source/CMakeFiles/mile_to_kilometer.dir/rule
+
+# Convenience name for target.
+mile_to_kilometer: source/CMakeFiles/mile_to_kilometer.dir/rule
+
+.PHONY : mile_to_kilometer
+
+# fast build rule for target.
+mile_to_kilometer/fast:
+	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/build
+.PHONY : mile_to_kilometer/fast
+
+# Convenience name for target.
+source/CMakeFiles/aufgabe1_3.dir/rule:
+	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe1_3.dir/rule
+.PHONY : source/CMakeFiles/aufgabe1_3.dir/rule
+
+# Convenience name for target.
+aufgabe1_3: source/CMakeFiles/aufgabe1_3.dir/rule
+
+.PHONY : aufgabe1_3
+
+# fast build rule for target.
+aufgabe1_3/fast:
+	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/aufgabe1_3.dir/build.make source/CMakeFiles/aufgabe1_3.dir/build
+.PHONY : aufgabe1_3/fast
 
 # Convenience name for target.
 source/CMakeFiles/helloworld.dir/rule:
@@ -209,6 +224,33 @@ helloworld.cpp.s:
 	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
 
+mile_to_kilometer.o: mile_to_kilometer.cpp.o
+
+.PHONY : mile_to_kilometer.o
+
+# target to build an object file
+mile_to_kilometer.cpp.o:
+	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.o
+.PHONY : mile_to_kilometer.cpp.o
+
+mile_to_kilometer.i: mile_to_kilometer.cpp.i
+
+.PHONY : mile_to_kilometer.i
+
+# target to preprocess a source file
+mile_to_kilometer.cpp.i:
+	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.i
+.PHONY : mile_to_kilometer.cpp.i
+
+mile_to_kilometer.s: mile_to_kilometer.cpp.s
+
+.PHONY : mile_to_kilometer.s
+
+# target to generate assembly for a file
+mile_to_kilometer.cpp.s:
+	cd /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.s
+.PHONY : mile_to_kilometer.cpp.s
+
 tests.o: tests.cpp.o
 
 .PHONY : tests.o
@@ -243,9 +285,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... aufgabe1_3"
 	@echo "... tests"
+	@echo "... edit_cache"
+	@echo "... mile_to_kilometer"
+	@echo "... aufgabe1_3"
 	@echo "... helloworld"
 	@echo "... aufgabe1_3.o"
 	@echo "... aufgabe1_3.i"
@@ -253,6 +296,9 @@ help:
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
+	@echo "... mile_to_kilometer.o"
+	@echo "... mile_to_kilometer.i"
+	@echo "... mile_to_kilometer.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

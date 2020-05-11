@@ -71,8 +71,9 @@ clean: source/clean
 # Directory level rules for directory source
 
 # Recursive "all" directory target.
-source/all: source/CMakeFiles/aufgabe1_3.dir/all
 source/all: source/CMakeFiles/tests.dir/all
+source/all: source/CMakeFiles/mile_to_kilometer.dir/all
+source/all: source/CMakeFiles/aufgabe1_3.dir/all
 source/all: source/CMakeFiles/helloworld.dir/all
 
 .PHONY : source/all
@@ -83,11 +84,66 @@ source/preinstall:
 .PHONY : source/preinstall
 
 # Recursive "clean" directory target.
-source/clean: source/CMakeFiles/aufgabe1_3.dir/clean
 source/clean: source/CMakeFiles/tests.dir/clean
+source/clean: source/CMakeFiles/mile_to_kilometer.dir/clean
+source/clean: source/CMakeFiles/aufgabe1_3.dir/clean
 source/clean: source/CMakeFiles/helloworld.dir/clean
 
 .PHONY : source/clean
+
+#=============================================================================
+# Target rules for target source/CMakeFiles/tests.dir
+
+# All Build rule for target.
+source/CMakeFiles/tests.dir/all:
+	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/depend
+	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles --progress-num=7,8 "Built target tests"
+.PHONY : source/CMakeFiles/tests.dir/all
+
+# Build rule for subdir invocation for target.
+source/CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles 0
+.PHONY : source/CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: source/CMakeFiles/tests.dir/rule
+
+.PHONY : tests
+
+# clean rule for target.
+source/CMakeFiles/tests.dir/clean:
+	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/clean
+.PHONY : source/CMakeFiles/tests.dir/clean
+
+#=============================================================================
+# Target rules for target source/CMakeFiles/mile_to_kilometer.dir
+
+# All Build rule for target.
+source/CMakeFiles/mile_to_kilometer.dir/all:
+	$(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/depend
+	$(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles --progress-num=5,6 "Built target mile_to_kilometer"
+.PHONY : source/CMakeFiles/mile_to_kilometer.dir/all
+
+# Build rule for subdir invocation for target.
+source/CMakeFiles/mile_to_kilometer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/mile_to_kilometer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles 0
+.PHONY : source/CMakeFiles/mile_to_kilometer.dir/rule
+
+# Convenience name for target.
+mile_to_kilometer: source/CMakeFiles/mile_to_kilometer.dir/rule
+
+.PHONY : mile_to_kilometer
+
+# clean rule for target.
+source/CMakeFiles/mile_to_kilometer.dir/clean:
+	$(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/clean
+.PHONY : source/CMakeFiles/mile_to_kilometer.dir/clean
 
 #=============================================================================
 # Target rules for target source/CMakeFiles/aufgabe1_3.dir
@@ -115,33 +171,6 @@ aufgabe1_3: source/CMakeFiles/aufgabe1_3.dir/rule
 source/CMakeFiles/aufgabe1_3.dir/clean:
 	$(MAKE) -f source/CMakeFiles/aufgabe1_3.dir/build.make source/CMakeFiles/aufgabe1_3.dir/clean
 .PHONY : source/CMakeFiles/aufgabe1_3.dir/clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/tests.dir
-
-# All Build rule for target.
-source/CMakeFiles/tests.dir/all:
-	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/depend
-	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles --progress-num=5,6 "Built target tests"
-.PHONY : source/CMakeFiles/tests.dir/all
-
-# Build rule for subdir invocation for target.
-source/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phil/Git/Programmiersprache/01/programmiersprachen-aufgabe-1/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/tests.dir/rule
-
-# Convenience name for target.
-tests: source/CMakeFiles/tests.dir/rule
-
-.PHONY : tests
-
-# clean rule for target.
-source/CMakeFiles/tests.dir/clean:
-	$(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/clean
-.PHONY : source/CMakeFiles/tests.dir/clean
 
 #=============================================================================
 # Target rules for target source/CMakeFiles/helloworld.dir
