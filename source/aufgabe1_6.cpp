@@ -1,31 +1,29 @@
 /*****************************************************************
- * UBUNGS 01: Aufgabe 1.5
+ * UBUNGS 01: Aufgabe 1.6
  *
  * Name     : Phillip Mudavanhu
  *
  * Mtrkln   : 112601
  *  
- * Topic    : intilization and assignment in C++
+ * Topic    : Declaration, Definition, Intialization in C++
  *
  *****************************************************************/
 
 
 
-
-UserType1 A; // Assignment
-UserType2 B = A; 
-
-
-UserType1 A; //intialisation
-UserType2 B; //intialisation
-
-B = A;       //Assignment / allocation 
-
-UserType A = 10; 
-UserType B = 20; 
-
-
 /* 
+
+DECLARATION
+The declaration means we are saying to a computer that this “thing” 
+(it can be a variable, a function or a class) exists but we don’t know where. 
+In the future, we may tell but right now it just exists somewhere. 
+In simple words, we don’t allocate memory while declaring. 
+We can declare that “thing” many times.
+
+DEFINATION
+The definition means we are saying to the computer that this “thing” needs memory 
+and it needs to be located somewhere. In simple words, defining means we have allocated memory for it. 
+We can define something only once
 
 INTIALIZATION
 The initialization means whatever our “thing “ is, we are giving it an initial value. 
@@ -33,17 +31,6 @@ That “thing” must be in some memory location and if we keep that location em
 Initialization is not always necessary but it’s important.
 
 */
-
-/* 
-
-ASSIGNEMNT
-The assignment of an whatever our “thing “ is,the operators modify the value of the object in the memory.
-That “thing” in some memory location with be given some data to store, or replace whats exisiting already of delete whats stored.
-Or we can also copy whats stored from one memory location into another. If you try to assign and undefined object there will be an error.
-
-Assignment can be done to already intialized or declared objects, in the memory. 
-*/
-
 
 //Example
 
