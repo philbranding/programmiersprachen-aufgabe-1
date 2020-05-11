@@ -11,7 +11,7 @@ geben? Wo sehen Sie Probleme im nachfolgenden Programmcode?
 int main() {
 	int 		a 	= 9;
 	bool 		b 	= false;
-	char 		c 	= ’a’;
+	char 		c 	= 'a';
 	double 		d 	= 1.3;
 	int const five 	= 5;
 	double 		e 	= a/five;
@@ -40,6 +40,6 @@ int main() {
 // for example the type conversion of a DOUBLE to INTERGER results in the loss of all data after the COMMA. 
 
 //Problems in the programm
-//1) The reassignemnt of a const value (five = d) will result in an error
-//2) The type conversion of the double into an int value will result in data loss
+//1) The reassignemnt of a const value (five = d) will result in an error : read-only variable is not assignable
+//2) The type conversion of the double into an int value will result in data loss :  (int five = double d (1.3))
 
